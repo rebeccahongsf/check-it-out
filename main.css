@@ -1,6 +1,6 @@
 :root {
-	--color-action-secondary: #EEC900;
 	--color-action: #7C4350;
+	--color-action-secondary: #EEC900;
 	--color-bg-base: #889EA8;
 	--color-bg-code: rgba(136, 158, 168, .3);
 	--color-border-neutral: #979797;
@@ -20,9 +20,14 @@
 }
 
 a {
-	color: var(--color-action-secondary);
+	color: var(--color-action);
 	text-decoration: none;
 	font-weight: bold;
+}
+
+a:hover,
+a:focus {
+	text-decoration: underline;
 }
 
 body {
@@ -37,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-	color: var(--color-action);
+	color: var(--color-font-base);
 }
 
 p {
@@ -47,7 +52,7 @@ p {
 pre {
 	background-color: var(--color-bg-code);
 	border-radius: 8px;
-	color: var(--color-action);
+	color: var(--color-font-base);
 	font-family: 'Courier New', 'Courier', 'monospace';
 	font-size: 1em;
 	margin-bottom: 12px;
@@ -76,7 +81,7 @@ kbd {
 }
 
 h2 {
-	color: var(--color-action);
+	color: var(--color-font-base);
 	font-size: 1.5em;
 	font-weight: 900;
 	margin-bottom: 16px;
@@ -180,7 +185,7 @@ footer {
 }
 
 footer a {
-	color: var(--color-bg-base);
+	color: var(--color-action-secondary);
 }
 
 .contributors {
